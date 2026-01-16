@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome | Jose Bohorquez - Software Engineer</title>
+    <link rel="stylesheet" href="/css/index.css">
+<script src="https://unpkg.com/lucide@latest" defer></script>
+    <script src="/js/include.js" defer></script>
+    <script src="/js/main.js" defer></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <div id="header-include"></div>
+    <div class="page-layout">
+        <div id="nav-include"></div>
+        <main id="main">
+            <section class="hero">
+                <h1>Welcome to my portfolio website!</h1>
+                <p class="hero-subtitle">
+                I enjoy building purpose-driven software with an emphasis on impact,
+                clarity, and inclusive design.
+                </p>
+                <div class="hero-actions">
+                <a href="/projects.html" class="hero-actions-primary-action">
+                    View Projects
+                </a>
+                <a href="/about.html" class="hero-actions-secondary-action">
+                    About Me
+                </a>
+                </div>
+            </section>
+        <section class="about-site">
+            <h2>About This Site</h2>
+            <p>
+            This site showcases my work as a software engineer. It highlights
+            selected projects, technical skills, and advocacy efforts, with a focus
+            on accessibility, thoughtful engineering, and real-world impact.
+            </p>
+            <p>
+            The site itself is intentionally built using semantic HTML, mobile-first
+            CSS, and plain JavaScript to prioritize performance, accessibility, and
+            maintainability.
+            </p>
+        </section>
+        <section class="highlights">
+            <h2>What You’ll Find Here</h2>
+            <ul>
+            <li>Software engineering projects with clear problem statements</li>
+            <li>Experience with accessible and standards-compliant design</li>
+            <li>Advocacy and leadership work related to disability and technology</li>
+            </ul>
+        </section>
+        </main>
+        </div>
+
+        <div id="footer-include"></div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            loadHtml("header-include", "/includes/header.html", () => {
+                lucide.createIcons();
+            });
+            loadHtml("nav-include", "/includes/nav.html", () => {
+                lucide.createIcons();
+                initMenuToggle();
+            });
+            loadHtml("footer-include", "/includes/footer.html", () => {
+                lucide.createIcons();
+            });
+        });
+    </script>
+</body>
+</html>

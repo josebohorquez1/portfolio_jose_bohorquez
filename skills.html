@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills | Jose Bohorquez - Software Engineer</title>
+    <link rel="stylesheet" href="/css/skills.css">
+    <link rel="stylesheet" href="/css/index.css">
+<script src="https://unpkg.com/lucide@latest" defer></script>
+    <script src="/js/include.js" defer></script>
+    <script src="/js/main.js" defer></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <div id="header-include"></div>
+    <div class="page-layout">
+        <div id="nav-include"></div>
+<main id="main">
+    <section class="hero">
+    <h1>Skills</h1>
+    <p class="hero-subtitle">
+      A snapshot of my technical abilities, software concepts, and communication skills.
+    </p>
+    </section>
+  <section class="skills">
+    <article class="skill-category">
+      <h2>Languages</h2>
+      <ul>
+        <li>Python</li>
+        <li>Java</li>
+        <li>JavaScript</li>
+        <li>C</li>
+        <li>C++</li>
+      </ul>
+    </article>
+    <article class="skill-category">
+      <h2>Web & Frameworks</h2>
+      <ul>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>Express</li>
+        <li>MERN Stack</li>
+        <li>HTML5</li>
+        <li>CSS3</li>
+      </ul>
+    </article>
+    <article class="skill-category">
+      <h2>Concepts & Tools</h2>
+      <ul>
+        <li>OOP</li>
+        <li>Data Structures</li>
+        <li>Software Design</li>
+        <li>Accessibility (WCAG 2.1)</li>
+        <li>Git</li>
+        <li>API Integration</li>
+        <li>Jira</li>
+        <li>UI/UX Design Principles</li>
+      </ul>
+    </article>
+    <article class="skill-category">
+      <h2>Communication</h2>
+      <ul>
+        <li>Corporate communication</li>
+        <li>Organizational communication</li>
+        <li>Interpersonal communication</li>
+        <li>Public speaking</li>
+        <li>Cultural communication</li>
+      </ul>
+    </article>
+    <article class="skill-category">
+      <h2>Other Skills</h2>
+      <ul>
+        <li>Strong communication and teamwork</li>
+        <li>Problem-solving</li>
+        <li>Fluent in English and Spanish</li>
+      </ul>
+    </article>
+  </section>
+</main>
+        </div>
+
+        <div id="footer-include"></div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            loadHtml("header-include", "/includes/header.html", () => {
+                lucide.createIcons();
+            });
+            loadHtml("nav-include", "/includes/nav.html", () => {
+                lucide.createIcons();
+                initMenuToggle();
+            });
+            loadHtml("footer-include", "/includes/footer.html", () => {
+                lucide.createIcons();
+            });
+        });
+    </script>
+</body>
+</html>

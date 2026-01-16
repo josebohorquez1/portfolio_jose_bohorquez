@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Jose Bohorquez - Software Engineer</title>
+    <link rel="stylesheet" href="/css/index.css">
+<script src="https://unpkg.com/lucide@latest" defer></script>
+    <script src="/js/include.js" defer></script>
+    <script src="/js/main.js" defer></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <div id="header-include"></div>
+    <div class="page-layout">
+        <div id="nav-include"></div>
+<main id="main">
+  <section>
+    <h1>About Me</h1>
+    <p>
+      I am an aspiring software engineer with a background in computer science
+      and communication studies, focused on building accessible, reliable,
+      and purpose-driven software.
+    </p>
+  </section>
+  <section>
+    <h2>Background</h2>
+    <p>
+      I earned a Bachelor’s degree in Computer Science with a minor in
+      Communication Studies from the University of Florida.
+      My academic work emphasized software design, problem solving,
+      and logic, alongside clear technical communication.
+    </p>
+    <p>
+      Through coursework and projects, I developed experience with
+      front-end and back-end concepts, including data structures,
+      programming language design, and standards-based web development.
+    </p>
+  </section>
+  <section>
+    <h2>How I Approach Software Engineering</h2>
+    <p>
+      I approach software engineering with a strong emphasis on clarity,
+      maintainability, and accessibility.
+      I value code that is readable, well-structured, and built with
+      real users in mind.
+    </p>
+    <p>
+      I am particularly interested in building software that solves
+      meaningful problems and has a positive real-world impact,
+      especially in contexts where usability and inclusion matter.
+    </p>
+  </section>
+<section>
+  <h2>Accessibility and Advocacy</h2>
+  <p>
+    In addition to my technical work, I am actively involved in advocacy at the
+    intersection of disability and technology through the National Federation
+    of the Blind.
+  </p>
+  <p>
+    Through this work, I champion issues that directly affect blind users,
+    including advancing better accessibility across software, applications,
+    programs, and websites. I engage with accessibility standards, usability
+    considerations, and real-world user needs to help promote technology that
+    is usable by everyone.
+  </p>
+  <p>
+    This advocacy experience strongly informs how I approach software
+    engineering, reinforcing the idea that accessibility is not a feature to
+    add later, but a fundamental aspect of quality, user-centered design.
+  </p>
+</section>
+  <section>
+    <h2>What’s Next</h2>
+    <p>
+      I am seeking opportunities where I can continue to grow as a software
+      engineer while contributing to products and teams that value
+      thoughtful design, accessibility, and impact.
+    </p>
+  </section>
+</main>
+        </div>
+
+        <div id="footer-include"></div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            loadHtml("header-include", "/includes/header.html", () => {
+                lucide.createIcons();
+            });
+            loadHtml("nav-include", "/includes/nav.html", () => {
+                lucide.createIcons();
+                initMenuToggle();
+            });
+            loadHtml("footer-include", "/includes/footer.html", () => {
+                lucide.createIcons();
+            });
+        });
+    </script>
+</body>
+</html>

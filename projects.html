@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Jose Bohorquez - Software Engineer</title>
+    <link rel="stylesheet" href="/css/projects.css">
+    <link rel="stylesheet" href="/css/index.css">
+<script src="https://unpkg.com/lucide@latest" defer></script>
+    <script src="/js/include.js" defer></script>
+    <script src="/js/main.js" defer></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <div id="header-include"></div>
+    <div class="page-layout">
+        <div id="nav-include"></div>
+<main id="main">
+    <section class="hero">
+        <h1>Projects</h1>
+        <p class="hero-subtitle">
+            A selection of my work in software engineering, web development, and accessibility.
+        </p>
+    </section>
+    <section class="projects">
+<article class="project">
+  <h2>Driver–Cyclist Awareness System</h2>
+  <p class="project-summary">
+    A senior design project focused on improving road safety by helping
+    drivers detect nearby cyclists through wireless communication between
+    vehicle-mounted and bicycle-mounted receivers.
+  </p>
+  <ul class="project-details">
+    <li><strong>Problem:</strong> Drivers often lack reliable awareness of cyclists, especially in low-visibility conditions.</li>
+    <li><strong>Solution:</strong> Worked on a team to design two communicating receivers—a car unit and a bicycle unit—that transmit proximity and location-related signals.</li>
+    <li><strong>Technologies:</strong> C, Arduino Microcontrollers</li>
+    <li><strong>Highlights:</strong> Team collaboration, system integration, and safety-oriented design.</li>
+  </ul>
+</article>
+    <article class="project">
+      <h2>Accessible Portfolio Website</h2>
+      <p class="project-summary">
+        A personal portfolio site built with semantic HTML, mobile-first CSS,
+        and plain JavaScript to prioritize performance and accessibility.
+      </p>
+      <ul class="project-details">
+        <li><strong>Focus:</strong> Accessibility, usability, inclusive design</li>
+        <li><strong>Technologies:</strong> HTML, CSS, JavaScript</li>
+        <li><strong>Highlights:</strong> Semantic structure, easy to navigate, keyboard navigation</li>
+      </ul>
+      <div class="project-links">
+        <a href="https://github.com/josebohorquez1/portfolio_jose_bohorquez">View Repository</a>
+        <a href="/">Visit Website</a>
+      </div>
+    </article>
+    <article class="project">
+      <h2>Toy Programming Language (Java)</h2>
+      <p class="project-summary">
+        Designed and implemented a toy programming language featuring a lexer,
+        parser, abstract syntax tree, interpreter, and semantic analyzer.
+      </p>
+      <ul class="project-details">
+        <li><strong>Focus:</strong> Language design, compilers, program analysis</li>
+        <li><strong>Technologies:</strong> Java, regular expressions</li>
+        <li><strong>Highlights:</strong> AST-based execution, error handling, extensibility</li>
+      </ul>
+    </article>
+    <article class="project">
+      <h2>Budget Buddy</h2>
+      <p class="project-summary">
+        A budgeting and expense-tracking application designed to help users
+        better understand and manage their personal finances.
+      </p>
+      <ul class="project-details">
+        <li><strong>Problem:</strong> Many budgeting tools are overly complex or difficult to use consistently.</li>
+        <li><strong>Solution:</strong> Built a simple, user-focused application for a software engineering class emphasizing clarity and ease of use.</li>
+        <li><strong>Technologies:</strong> MondoDB, Express JS, React, Node.js</li>
+        <li><strong>Highlights:</strong> Secure data handling, input validation, and clear user feedback.</li>
+      </ul>
+      <div class="project-links">
+        <a href="https://github.com/josebohorquez1/cen3031_group8_Project">View Repository</a>
+      </div>
+    </article>
+    <article class="project">
+      <h2>Accessible PDF Converter</h2>
+      <p class="project-summary">
+        A prototype tool designed to convert PDF documents into more accessible formats for a human computer interaction class project,
+        improving usability for blind and screen reader users.
+      </p>
+      <ul class="project-details">
+        <li><strong>Problem:</strong> Many PDFs are inaccessible due to poor structure and tagging.</li>
+        <li><strong>Solution:</strong> Created a converter that extracts and restructures content to HTML with accessibility in mind.</li>
+        <li><strong>Technologies:</strong> Next JS, React, Node.js</li>
+        <li><strong>Highlights:</strong> Focus on semantic structure, text extraction, and ease of use.</li>
+      </ul>
+      <div class="project-links">
+      </div>
+    </article>
+    <article class="project">
+      <h2>Statewide Chapter Website</h2>
+      <p class="project-summary">
+        Currently developing a website to be used for outreach for the Florida Statewide Chapter, a chapter of the National Federation of the Blind of Florida.
+      </p>
+      <ul class="project-details">
+        <li><strong>Problem:</strong>Bringing in members to the chapter can be difficult especially if information is not centralized.</li>
+        <li><strong>Solution:</strong> Build a website with chapter information that is accessible and allows prospective members to learn more about the chapter.</li>
+        <li><strong>Technologies:</strong> HTML, CSS, JavaScript.</li>
+        <li><strong>Highlights:</strong> Semantic HTML, keyboard navigation, and real stakeholder feedback.</li>
+      </ul>
+      <div class="project-links">
+        <a href="https://github.com/josebohorquez1/fswc_website">View Repository</a>
+        <a href="https://josebohorquez1.github.io/fswc_website">Visit Site</a>
+      </div>
+    </article>      
+    </section>
+</main>
+        </div>
+
+        <div id="footer-include"></div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            loadHtml("header-include", "/includes/header.html", () => {
+                lucide.createIcons();
+            });
+            loadHtml("nav-include", "/includes/nav.html", () => {
+                lucide.createIcons();
+                initMenuToggle();
+            });
+            loadHtml("footer-include", "/includes/footer.html", () => {
+                lucide.createIcons();
+            });
+        });
+    </script>
+</body>
+</html>

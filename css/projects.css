@@ -1,0 +1,57 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.project {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #2A2F3A;
+}
+
+.project:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.project h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.project-summary {
+    margin-bottom: 1rem;
+    max-width: 70ch;;
+}
+
+.project-details {
+    list-style: disc;
+    padding-left: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.project-details li {
+    margin-bottom: 0.5rem;
+}
+
+.project-details strong {
+    font-weight: 600;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.project-links a {
+    font-weight: 600;
+}
+
+@media (min-width: 768px) {
+    .project-summary {
+        max-width: 65ch;
+    }
+}
