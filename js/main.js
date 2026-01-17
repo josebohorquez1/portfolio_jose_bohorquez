@@ -14,3 +14,13 @@ function initMenuToggle() {
             }
         });
 }
+
+function updateNavPadding() {
+    const header = document.querySelector('.site-header');
+    const siteNav = document.querySelector('.site-nav');
+    if (!header || !siteNav) return;
+    if (window.innerWidth < 768) {
+        const headerHeight = header.offsetHeight;
+        siteNav.style.paddingTop = headerHeight + "px";
+    }
+}

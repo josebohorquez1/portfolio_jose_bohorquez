@@ -220,9 +220,6 @@ a:focus, a:hover {
         border-bottom: 1px solid #2A2F3A;
         padding: 0.5rem 1rem;
     }
-    .site-header-banner-image {
-        height: 140px;
-    }
     .page-layout {
         display: grid;
         grid-template-columns: 200px 1fr;
