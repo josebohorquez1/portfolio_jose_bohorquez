@@ -32,6 +32,11 @@ body {
 .site-header {
     border-bottom: 1px solid #2A2F3A;
     padding: 0.5rem 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10001;
 }
 
 .site-header-inner {
@@ -90,6 +95,10 @@ body {
 
 .site-nav.active {
     transform: translateX(0);
+}
+body.nav-active {
+    overflow: hidden;
+    height: 100%;
 }
 
 .site-nav ul {
@@ -207,6 +216,10 @@ a:focus, a:hover {
 }
 
 @media (min-width: 768px) {
+    .site-header {
+        border-bottom: 1px solid #2A2F3A;
+        padding: 0.5rem 1rem;
+    }
     .site-header-banner-image {
         height: 140px;
     }
