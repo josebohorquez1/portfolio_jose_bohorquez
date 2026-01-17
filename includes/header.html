@@ -1,18 +1,57 @@
-    <header class="site-header">
-            <div class="site-header-banner-image">
-                <img src="images/me.png" alt="Photo of Jose Bohorquez">
-            </div>
-        <div class="site-header-inner">
-                <div class="site-header-identity">
-                    <h1 class="site-header-identity-title">Jose Bohorquez</h1>
-                    <span class="site-header-identity-subtitle">Aspiring Software Engineer</span>
-                </div>
-            <button
-                class="site-header-nav-toggle"
-                aria-controls="site-header-nav"
-                aria-expanded="false"
-                aria-label="Toggle Navigation Menu">
-                <i data-lucide="menu" aria-hidden="true"></i>
-            </button>
+<header class="border-bottom bg-light">
+  <div class="container-fluid py-3">
+    <div class="d-flex align-items-center justify-content-between">
+      <div class="d-flex align-items-center gap-3">
+        <img
+          src="images/me.png"
+          alt="Photo of Jose Bohorquez"
+          width="56"
+          height="56"
+          class="rounded-circle"
+        >
+        <div>
+          <h1 class="h5 mb-0">Jose Bohorquez</h1>
+          <p class="mb-0 text-muted small">
+            Aspiring Software Engineer
+          </p>
         </div>
-    </header>
+      </div>
+      <button
+        class="navbar-toggler d-md-none"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#primaryNav"
+        aria-controls="primaryNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="primaryNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link"href="index.html">
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="skills.html">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="advocacy.html">Advocacy</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
