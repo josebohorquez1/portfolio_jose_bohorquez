@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Advocacy Work | Jose Bohorquez - Software Engineer</title>
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="css/index.css">
 <script src="https://unpkg.com/lucide@latest" defer></script>
-    <script src="/js/include.js" defer></script>
-    <script src="/js/main.js" defer></script>
+    <script src="js/include.js" defer></script>
+    <script src="js/main.js" defer></script>
 </head>
 
 <body>
@@ -88,14 +88,14 @@
         <div id="footer-include"></div>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
-            loadHtml("header-include", "/includes/header.html", () => {
+            loadHtml("header-include", "includes/header.html", () => {
                 lucide.createIcons();
             });
-            loadHtml("nav-include", "/includes/nav.html", () => {
+            loadHtml("nav-include", "includes/nav.html", () => {
                 lucide.createIcons();
                 initMenuToggle();
             });
-            loadHtml("footer-include", "/includes/footer.html", () => {
+            loadHtml("footer-include", "includes/footer.html", () => {
                 lucide.createIcons();
             });
         });
