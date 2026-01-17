@@ -214,7 +214,7 @@ a:focus, a:hover {
 
 @media (min-width: 768px) {
     .site-header-banner-image {
-        height: 220px;
+        height: 140px;
     }
     .page-layout {
         display: grid;
