@@ -5,13 +5,13 @@ function initMenuToggle() {
         navToggle.addEventListener('click', () => {
             const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
             navToggle.setAttribute('aria-expanded', (!isExpanded).toString());
+            const navHidden = siteNav.getAttribute("aria-hidden") === 'true';
+            siteNav.setAttribute("aria-hidden", (!navHidden).toString());
             siteNav.classList.toggle('active');
-            const icon = navToggle.querySelector('i[data-lucide]');
-            if (!isExpanded) {
-                icon.setAttribute('data-lucide', 'x');
-            } else {
-                icon.setAttribute('data-lucide', 'menu');
+            const icon = navToggle.querySelector('i');
+            if (icon) {
+                icon.dataset.lucide = isExpanded ? 'menu' : 'x';
+                lucide.createIcons();
             }
-            lucide.createIcons();
         });
 }

@@ -92,6 +92,7 @@
             loadHtml("nav-include", "includes/nav.html", () => {
                 lucide.createIcons();
                 initMenuToggle();
+                if (window.matchMedia("(min-width: 768px)").matches) document.querySelector('.site-nav').setAttribute("aria-hidden", "false");
             });
             loadHtml("footer-include", "includes/footer.html", () => {
                 lucide.createIcons();
